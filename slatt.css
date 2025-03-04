@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.produit {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produit:hover {
+    transform: scale(1.05);
+    border-color: #00ffcc; /* Effet blanc fluo */
+}
+
+.produit img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    border-color: #00ffcc; /* Effet blanc fluo */
+    background-color: #00ffcc;
+}
+
+.produit.sold-out {
+    opacity: 0.5;
+    pointer-events: none;
+    text-align: center;
+}
+
+.produit.sold-out h2 {
+    color: red;
+}
+
+.floating-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    text-align: center;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+p {
+	font-size:8px;
+	line-height:8px;
+	text-align:justify;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background: url(logo1.jpg) no-repeat center/cover;
+	background-attachment: fixed;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgb(225, 225, 255, 0);
+}

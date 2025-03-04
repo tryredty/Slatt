@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produit.css">
+    <title>Détails du Produit</title>
+</head>
+<body>
+    <header>
+        <h1>Détails du Produit</h1>
+    </header>
+    <main>
+        <div class="produit-detail">
+            <img id="produitImage" src="produit1noir.jpg" alt="T-shirt">
+            <h2 id="produitNom">T-shirt 1</h2>
+            <p>Description du T-shirt.</p>
+            <div>
+                <label for="taille">Choisissez votre taille:</label>
+                <select id="taille">
+                    
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div>
+                <label for="couleur">Choisissez la couleur:</label>
+                <select id="couleur" onchange="changerCouleur()">
+                    <option value="blanc">Noir</option>
+                    <option value="noir">Blanc</option>
+                </select>
+            </div>
+            <a id="precommander" href="#" class="btn">Précommander dès maintenant !</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Boutique de T-shirts</p>
+    </footer>
+    <script src="produit.js"></script>
+</body>
+</html>
