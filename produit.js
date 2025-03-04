@@ -28,6 +28,6 @@ document.getElementById('precommander').addEventListener('click', function() {
     const couleur = document.getElementById('couleur').value;
     const message = `Je souhaite précommander le ${produit} en taille ${taille} et couleur ${couleur}.`;
     
-    const whatsappURL = `https://wa.me/22870187937?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/22871367143?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 });
