@@ -8,17 +8,29 @@ if (produit === 'tshirt1') {
 } else if (produit === 'tshirt2') {
     document.getElementById('produitNom').textContent = "T-shirt 2";
     document.getElementById('produitImage').src = "produit2noir.jpg";
+} else if (produit === 'tshirt3' ) {
+    document.getElementById('produitNom').textContent = "T-shirt 3";
+    document.getElementById('produitImage').src = "produit3noir.jpg";
 }
-
 // Fonction pour changer la couleur du T-shirt
-function changerCouleur() {
+unction changerCouleur() {
     const couleur = document.getElementById('couleur').value;
     const image = document.getElementById('produitImage');
-    
+    const produit = urlParams.get('produit');
+
+    let imageBase;
+    if (produit === 'tshirt1') {
+        imageBase = 'produit1';
+    } else if (produit === 'tshirt2') {
+        imageBase = 'produit2';
+    } else if (produit === 'tshirt3') {
+        imageBase = 'produit3';
+    }
+
     if (couleur === 'noir') {
-        image.src = 'produit1blanc.jpg'; // Assurez-vous d'avoir cette image
+        image.src = `${imageBase}noir.jpg`;
     } else {
-        image.src = 'produit1noir.jpg'; // Assurez-vous d'avoir cette image
+        image.src = `${imageBase}blanc.jpg`;
     }
 }
 
