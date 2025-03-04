@@ -12,8 +12,9 @@ if (produit === 'tshirt1') {
     document.getElementById('produitNom').textContent = "T-shirt 3";
     document.getElementById('produitImage').src = "produit3noir.jpg";
 }
+
 // Fonction pour changer la couleur du T-shirt
-unction changerCouleur() {
+function changerCouleur() {
     const couleur = document.getElementById('couleur').value;
     const image = document.getElementById('produitImage');
     const produit = urlParams.get('produit');
@@ -33,6 +34,7 @@ unction changerCouleur() {
         image.src = `${imageBase}blanc.jpg`;
     }
 }
+
 
 // Redirection vers WhatsApp
 document.getElementById('precommander').addEventListener('click', function() {
